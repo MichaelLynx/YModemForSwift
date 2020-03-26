@@ -19,7 +19,7 @@
 
 Description：
 
-Need to use YModem to transfer data by bluetooth but I couldn't find an aticle of swift version about it. So I made one.
+Need to use YModem to transfer data but I couldn't find an aticle of swift version about it. So I made one.
 
 Usage:
 
