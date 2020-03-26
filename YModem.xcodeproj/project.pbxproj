@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		487EFE84242C4D7C00337D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EFE83242C4D7C00337D30 /* AppDelegate.swift */; };
+		487EFE86242C4D7C00337D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EFE85242C4D7C00337D30 /* ViewController.swift */; };
+		487EFE89242C4D7C00337D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487EFE87242C4D7C00337D30 /* Main.storyboard */; };
+		487EFE8B242C4D7E00337D30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 487EFE8A242C4D7E00337D30 /* Assets.xcassets */; };
+		487EFE8E242C4D7E00337D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487EFE8C242C4D7E00337D30 /* LaunchScreen.storyboard */; };
+		487EFE99242C4D7E00337D30 /* YModemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EFE98242C4D7E00337D30 /* YModemTests.swift */; };
+		487EFEA4242C4D7E00337D30 /* YModemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EFEA3242C4D7E00337D30 /* YModemUITests.swift */; };
+		487EFEB2242C4DAD00337D30 /* BLEDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487EFEB1242C4DAD00337D30 /* BLEDataManager.swift */; };
+		487EFEB5242C4E9F00337D30 /* YModem.c in Sources */ = {isa = PBXBuildFile; fileRef = 487EFEB3242C4E9F00337D30 /* YModem.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		487EFE95242C4D7E00337D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 487EFE78242C4D7C00337D30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 487EFE7F242C4D7C00337D30;
+			remoteInfo = YModem;
+		};
+		487EFEA0242C4D7E00337D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 487EFE78242C4D7C00337D30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 487EFE7F242C4D7C00337D30;
+			remoteInfo = YModem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		487EFE80242C4D7C00337D30 /* YModem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YModem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		487EFE83242C4D7C00337D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		487EFE85242C4D7C00337D30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		487EFE88242C4D7C00337D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		487EFE8A242C4D7E00337D30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		487EFE8D242C4D7E00337D30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		487EFE8F242C4D7E00337D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		487EFE94242C4D7E00337D30 /* YModemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YModemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		487EFE98242C4D7E00337D30 /* YModemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YModemTests.swift; sourceTree = "<group>"; };
+		487EFE9A242C4D7E00337D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		487EFE9F242C4D7E00337D30 /* YModemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YModemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		487EFEA3242C4D7E00337D30 /* YModemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YModemUITests.swift; sourceTree = "<group>"; };
+		487EFEA5242C4D7E00337D30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		487EFEB1242C4DAD00337D30 /* BLEDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDataManager.swift; sourceTree = "<group>"; };
+		487EFEB3242C4E9F00337D30 /* YModem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YModem.c; sourceTree = "<group>"; };
+		487EFEB4242C4E9F00337D30 /* YModem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YModem.h; sourceTree = "<group>"; };
+		487EFEB6242C4ED700337D30 /* YModem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YModem-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		487EFE7D242C4D7C00337D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		487EFE91242C4D7E00337D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		487EFE9C242C4D7E00337D30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		487EFE77242C4D7C00337D30 = {
+			isa = PBXGroup;
+			children = (
+				487EFE82242C4D7C00337D30 /* YModem */,
+				487EFE97242C4D7E00337D30 /* YModemTests */,
+				487EFEA2242C4D7E00337D30 /* YModemUITests */,
+				487EFE81242C4D7C00337D30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		487EFE81242C4D7C00337D30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				487EFE80242C4D7C00337D30 /* YModem.app */,
+				487EFE94242C4D7E00337D30 /* YModemTests.xctest */,
+				487EFE9F242C4D7E00337D30 /* YModemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		487EFE82242C4D7C00337D30 /* YModem */ = {
+			isa = PBXGroup;
+			children = (
+				487EFE83242C4D7C00337D30 /* AppDelegate.swift */,
+				487EFE85242C4D7C00337D30 /* ViewController.swift */,
+				487EFEB1242C4DAD00337D30 /* BLEDataManager.swift */,
+				487EFEB3242C4E9F00337D30 /* YModem.c */,
+				487EFEB4242C4E9F00337D30 /* YModem.h */,
+				487EFEB6242C4ED700337D30 /* YModem-Bridging-Header.h */,
+				487EFE87242C4D7C00337D30 /* Main.storyboard */,
+				487EFE8A242C4D7E00337D30 /* Assets.xcassets */,
+				487EFE8C242C4D7E00337D30 /* LaunchScreen.storyboard */,
+				487EFE8F242C4D7E00337D30 /* Info.plist */,
+			);
+			path = YModem;
+			sourceTree = "<group>";
+		};
+		487EFE97242C4D7E00337D30 /* YModemTests */ = {
+			isa = PBXGroup;
+			children = (
+				487EFE98242C4D7E00337D30 /* YModemTests.swift */,
+				487EFE9A242C4D7E00337D30 /* Info.plist */,
+			);
+			path = YModemTests;
+			sourceTree = "<group>";
+		};
+		487EFEA2242C4D7E00337D30 /* YModemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				487EFEA3242C4D7E00337D30 /* YModemUITests.swift */,
+				487EFEA5242C4D7E00337D30 /* Info.plist */,
+			);
+			path = YModemUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		487EFE7F242C4D7C00337D30 /* YModem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 487EFEA8242C4D7E00337D30 /* Build configuration list for PBXNativeTarget "YModem" */;
+			buildPhases = (
+				487EFE7C242C4D7C00337D30 /* Sources */,
+				487EFE7D242C4D7C00337D30 /* Frameworks */,
+				487EFE7E242C4D7C00337D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YModem;
+			productName = YModem;
+			productReference = 487EFE80242C4D7C00337D30 /* YModem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		487EFE93242C4D7E00337D30 /* YModemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 487EFEAB242C4D7E00337D30 /* Build configuration list for PBXNativeTarget "YModemTests" */;
+			buildPhases = (
+				487EFE90242C4D7E00337D30 /* Sources */,
+				487EFE91242C4D7E00337D30 /* Frameworks */,
+				487EFE92242C4D7E00337D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				487EFE96242C4D7E00337D30 /* PBXTargetDependency */,
+			);
+			name = YModemTests;
+			productName = YModemTests;
+			productReference = 487EFE94242C4D7E00337D30 /* YModemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		487EFE9E242C4D7E00337D30 /* YModemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 487EFEAE242C4D7E00337D30 /* Build configuration list for PBXNativeTarget "YModemUITests" */;
+			buildPhases = (
+				487EFE9B242C4D7E00337D30 /* Sources */,
+				487EFE9C242C4D7E00337D30 /* Frameworks */,
+				487EFE9D242C4D7E00337D30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				487EFEA1242C4D7E00337D30 /* PBXTargetDependency */,
+			);
+			name = YModemUITests;
+			productName = YModemUITests;
+			productReference = 487EFE9F242C4D7E00337D30 /* YModemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		487EFE78242C4D7C00337D30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Lynx;
+				TargetAttributes = {
+					487EFE7F242C4D7C00337D30 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					487EFE93242C4D7E00337D30 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 487EFE7F242C4D7C00337D30;
+					};
+					487EFE9E242C4D7E00337D30 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 487EFE7F242C4D7C00337D30;
+					};
+				};
+			};
+			buildConfigurationList = 487EFE7B242C4D7C00337D30 /* Build configuration list for PBXProject "YModem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 487EFE77242C4D7C00337D30;
+			productRefGroup = 487EFE81242C4D7C00337D30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				487EFE7F242C4D7C00337D30 /* YModem */,
+				487EFE93242C4D7E00337D30 /* YModemTests */,
+				487EFE9E242C4D7E00337D30 /* YModemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		487EFE7E242C4D7C00337D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487EFE8E242C4D7E00337D30 /* LaunchScreen.storyboard in Resources */,
+				487EFE8B242C4D7E00337D30 /* Assets.xcassets in Resources */,
+				487EFE89242C4D7C00337D30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		487EFE92242C4D7E00337D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		487EFE9D242C4D7E00337D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		487EFE7C242C4D7C00337D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487EFEB5242C4E9F00337D30 /* YModem.c in Sources */,
+				487EFEB2242C4DAD00337D30 /* BLEDataManager.swift in Sources */,
+				487EFE86242C4D7C00337D30 /* ViewController.swift in Sources */,
+				487EFE84242C4D7C00337D30 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		487EFE90242C4D7E00337D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487EFE99242C4D7E00337D30 /* YModemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		487EFE9B242C4D7E00337D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487EFEA4242C4D7E00337D30 /* YModemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		487EFE96242C4D7E00337D30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 487EFE7F242C4D7C00337D30 /* YModem */;
+			targetProxy = 487EFE95242C4D7E00337D30 /* PBXContainerItemProxy */;
+		};
+		487EFEA1242C4D7E00337D30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 487EFE7F242C4D7C00337D30 /* YModem */;
+			targetProxy = 487EFEA0242C4D7E00337D30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		487EFE87242C4D7C00337D30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				487EFE88242C4D7C00337D30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		487EFE8C242C4D7E00337D30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				487EFE8D242C4D7E00337D30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		487EFEA6242C4D7E00337D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		487EFEA7242C4D7E00337D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		487EFEA9242C4D7E00337D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YModem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YModem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YModem/YModem-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		487EFEAA242C4D7E00337D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YModem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YModem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YModem/YModem-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		487EFEAC242C4D7E00337D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YModemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YModemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YModem.app/YModem";
+			};
+			name = Debug;
+		};
+		487EFEAD242C4D7E00337D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YModemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YModemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YModem.app/YModem";
+			};
+			name = Release;
+		};
+		487EFEAF242C4D7E00337D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YModemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YModemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YModem;
+			};
+			name = Debug;
+		};
+		487EFEB0242C4D7E00337D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YModemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YModemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YModem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		487EFE7B242C4D7C00337D30 /* Build configuration list for PBXProject "YModem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487EFEA6242C4D7E00337D30 /* Debug */,
+				487EFEA7242C4D7E00337D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		487EFEA8242C4D7E00337D30 /* Build configuration list for PBXNativeTarget "YModem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487EFEA9242C4D7E00337D30 /* Debug */,
+				487EFEAA242C4D7E00337D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		487EFEAB242C4D7E00337D30 /* Build configuration list for PBXNativeTarget "YModemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487EFEAC242C4D7E00337D30 /* Debug */,
+				487EFEAD242C4D7E00337D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		487EFEAE242C4D7E00337D30 /* Build configuration list for PBXNativeTarget "YModemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487EFEAF242C4D7E00337D30 /* Debug */,
+				487EFEB0242C4D7E00337D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 487EFE78242C4D7C00337D30 /* Project object */;
+}
